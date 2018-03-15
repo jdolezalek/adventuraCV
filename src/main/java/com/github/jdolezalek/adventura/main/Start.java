@@ -45,9 +45,9 @@ public class Start extends Application
     	Parent root = loader.load();
 
  //		TODO předání hry kontroleru
-//    	HomeController controller = loader.getController();
-//    	IHra hra = new Hra();
-//		controller.inicializuj(hra);
+    	homeController controller = loader.getController();
+    	IHra hra = new Hra();
+    	controller.inicializuj(hra);
     	
     	primaryStage.setScene(new Scene(root));
     	primaryStage.show();

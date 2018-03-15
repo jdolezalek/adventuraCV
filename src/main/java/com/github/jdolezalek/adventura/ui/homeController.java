@@ -13,7 +13,10 @@ public class homeController extends GridPane {
 	private IHra hra;
 	
 	public void odesliPrikaz() {
-		System.out.println(textVstup.getText());
+		String vstup = textVstup.getText();
+		String vypis = hra.zpracujPrikaz(vstup);
+		textVypis.appendText("\n"+vstup+"\n"+vypis);
+		textVstup.setText("");
 	}
 	
 	public void inicializuj(IHra hra) 

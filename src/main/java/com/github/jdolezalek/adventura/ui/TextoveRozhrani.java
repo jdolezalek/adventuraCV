@@ -1,4 +1,4 @@
-package com.github.jdolezalek.adventura.uiText;
+package com.github.jdolezalek.adventura.ui;
 
 
 import java.util.Scanner;
